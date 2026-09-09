@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img">
+  <defs>
+    <linearGradient id="w6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="0.55" stop-color="#F1E6D2"/>
+      <stop offset="0.56" stop-color="#A9805A"/>
+      <stop offset="1" stop-color="#7C5A3C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#w6)"/>
+  <rect y="660" width="1600" height="540" fill="#8A6547"/>
+  <rect y="660" width="1600" height="18" fill="#6E4E33" opacity="0.6"/>
+  <rect x="120" y="180" width="520" height="330" rx="14" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="120" y="180" width="520" height="330" rx="14" fill="none" stroke="#D9C6A4" stroke-width="8"/>
+  <rect x="960" y="180" width="520" height="330" rx="14" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="1160" y="300" width="120" height="26" rx="13" fill="#B52B31" opacity="0.55"/>
+  <g fill="#6B4A2E">
+    <rect x="220" y="780" width="240" height="26" rx="13"/>
+    <rect x="300" y="806" width="26" height="150" rx="13"/>
+    <rect x="380" y="806" width="26" height="150" rx="13"/>
+    <rect x="680" y="780" width="240" height="26" rx="13"/>
+    <rect x="760" y="806" width="26" height="150" rx="13"/>
+    <rect x="840" y="806" width="26" height="150" rx="13"/>
+    <rect x="1140" y="780" width="240" height="26" rx="13"/>
+    <rect x="1220" y="806" width="26" height="150" rx="13"/>
+    <rect x="1300" y="806" width="26" height="150" rx="13"/>
+  </g>
+  <g fill="#F3EAD8">
+    <rect x="220" y="756" width="240" height="30" rx="15"/>
+    <rect x="680" y="756" width="240" height="30" rx="15"/>
+    <rect x="1140" y="756" width="240" height="30" rx="15"/>
+  </g>
+  <g fill="#3E2C1D" opacity="0.85">
+    <ellipse cx="300" cy="748" rx="26" ry="14"/>
+    <ellipse cx="380" cy="748" rx="26" ry="14"/>
+    <ellipse cx="760" cy="748" rx="26" ry="14"/>
+    <ellipse cx="1220" cy="748" rx="26" ry="14"/>
+  </g>
+</svg>

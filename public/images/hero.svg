@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9DCC8"/>
+      <stop offset="0.45" stop-color="#DCC7A6"/>
+      <stop offset="1" stop-color="#8A6547"/>
+    </linearGradient>
+    <radialGradient id="soft" cx="0.5" cy="0.38" r="0.55">
+      <stop offset="0" stop-color="#C9A87F" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C9A87F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9805A"/>
+      <stop offset="1" stop-color="#7C5A3C"/>
+    </linearGradient>
+    <radialGradient id="accent" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#B52B31" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#B52B31" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="2400" height="1500" fill="url(#bg)"/>
+  <rect y="880" width="2400" height="620" fill="url(#table)"/>
+  <g opacity="0.5" stroke="#6E4E33" stroke-width="6">
+    <line x1="0" y1="1020" x2="2400" y2="1020"/>
+    <line x1="0" y1="1180" x2="2400" y2="1180"/>
+    <line x1="0" y1="1360" x2="2400" y2="1360"/>
+  </g>
+  <ellipse cx="1980" cy="380" rx="330" ry="330" fill="url(#accent)"/>
+  <rect width="2400" height="1500" fill="url(#soft)"/>
+  <g>
+    <ellipse cx="1200" cy="1230" rx="330" ry="60" fill="#4A3423" opacity="0.45"/>
+    <path d="M1010 950 h380 l-40 260 a30 30 0 0 1 -30 26 h-240 a30 30 0 0 1 -30 -26 z" fill="#F3ECE0"/>
+    <path d="M1010 950 h380 l-8 44 h-364 z" fill="#D9C6A8"/>
+    <ellipse cx="1200" cy="920" rx="200" ry="90" fill="#F7F1E4"/>
+    <ellipse cx="1130" cy="895" rx="90" ry="55" fill="#EFE3CE"/>
+    <ellipse cx="1270" cy="895" rx="95" ry="58" fill="#E7D3AE"/>
+    <ellipse cx="1200" cy="870" rx="70" ry="40" fill="#F9F4E8"/>
+    <circle cx="1310" cy="840" r="26" fill="#B52B31" opacity="0.55"/>
+    <circle cx="1350" cy="880" r="14" fill="#B52B31" opacity="0.4"/>
+    <rect x="1180" y="620" width="40" height="180" rx="20" fill="#8A6547" opacity="0.85"/>
+  </g>
+</svg>

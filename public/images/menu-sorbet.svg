@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img">
+  <defs>
+    <linearGradient id="b5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3E9D8"/>
+      <stop offset="1" stop-color="#C6A37E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#b5)"/>
+  <rect y="780" width="1600" height="420" fill="#8A6547" opacity="0.88"/>
+  <ellipse cx="700" cy="950" rx="270" ry="50" fill="#3E2C1D" opacity="0.4"/>
+  <path d="M510 640 h380 l-40 264 a30 30 0 0 1 -30 26 H570 a30 30 0 0 1 -30 -26 z" fill="#F6F0E2"/>
+  <ellipse cx="700" cy="610" rx="195" ry="88" fill="#E9B7A6"/>
+  <ellipse cx="640" cy="588" rx="85" ry="50" fill="#F0C4B4"/>
+  <ellipse cx="762" cy="588" rx="88" ry="52" fill="#DFA08D"/>
+  <g>
+    <circle cx="1060" cy="830" r="72" fill="#B52B31" opacity="0.68"/>
+    <circle cx="1180" cy="870" r="54" fill="#C96A5A" opacity="0.7"/>
+    <circle cx="990" cy="890" r="44" fill="#D89A7E" opacity="0.75"/>
+    <path d="M1060 758 q10 -34 44 -40 q-6 34 -44 40" fill="#5E6E3E" opacity="0.85"/>
+  </g>
+  <ellipse cx="700" cy="580" rx="40" ry="22" fill="#F7D9CB" opacity="0.8"/>
+</svg>

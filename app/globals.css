@@ -1,0 +1,205 @@
+@config "../tailwind.config.ts";
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f7f4ef;
+  --color-ink: #2a231f;
+  --color-accent: #b52b31;
+  --color-state: #8a6547;
+
+  --text-display: 48px;
+  --text-display--line-height: 1.18;
+  --text-display--letter-spacing: -0.02em;
+
+  --text-h1-mobile: 36px;
+  --text-h1-mobile--line-height: 1.18;
+  --text-h1-mobile--letter-spacing: -0.02em;
+
+  --text-h2: 32px;
+  --text-h2--line-height: 1.32;
+  --text-h2--letter-spacing: -0.02em;
+
+  --text-h3: 22px;
+  --text-h3--line-height: 1.36;
+  --text-h3--letter-spacing: -0.02em;
+
+  --text-lead: 18px;
+  --text-lead--line-height: 1.7;
+  --text-lead--letter-spacing: 0;
+
+  --text-body: 16px;
+  --text-body--line-height: 1.7;
+  --text-body--letter-spacing: 0;
+
+  --text-support: 15px;
+  --text-support--line-height: 1.7;
+  --text-support--letter-spacing: 0;
+
+  --text-caption: 13px;
+  --text-caption--line-height: 1.55;
+  --text-caption--letter-spacing: 0;
+}
+
+:root {
+  --mobile-action-bar-height: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f4ef;
+  color: #2a231f;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- 전역 CSS 필수 규칙 (그대로 포함) ---- */
+:where(h1, h2, h3, h4, p, li, dt, dd, figcaption, blockquote) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid #b52b31;
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+body {
+  padding-bottom: calc(
+    var(--mobile-action-bar-height, 0px) + env(safe-area-inset-bottom)
+  );
+}
+
+.price,
+.hours,
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 767px) {
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 어두운 이미지 위 포커스 링은 충분히 밝은 색으로 별도 override한다. */
+.hero-focus :focus-visible,
+.hero-focus a:focus-visible {
+  outline-color: #ffd9a8;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.55);
+}
+
+/* 영업시간·가격 등 라틴 문자와 숫자 위주 정보의 보조 라벨 */
+.label-latin {
+  letter-spacing: 0.06em;
+}
+
+/* 사진 위 텍스트 가독성: radial 국부 감광 + 하단 scrim + text-shadow */
+.hero-scrim {
+  background:
+    radial-gradient(
+      72% 58% at 50% 42%,
+      rgba(24, 16, 12, 0.62) 0%,
+      rgba(24, 16, 12, 0.28) 52%,
+      rgba(24, 16, 12, 0) 78%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(24, 16, 12, 0.18) 0%,
+      rgba(24, 16, 12, 0) 34%,
+      rgba(24, 16, 12, 0.32) 62%,
+      rgba(24, 16, 12, 0.72) 100%
+    );
+}
+
+.hero-text-shadow {
+  text-shadow:
+    0 1px 2px rgba(20, 12, 8, 0.85),
+    0 2px 14px rgba(20, 12, 8, 0.75),
+    0 8px 32px rgba(20, 12, 8, 0.55);
+}
+
+.hero-text-shadow-soft {
+  text-shadow:
+    0 1px 2px rgba(20, 12, 8, 0.8),
+    0 2px 10px rgba(20, 12, 8, 0.65);
+}
+
+/* 텍스트 링크 접근성: 최소 터치 타깃 */
+.a11y-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
+/* 과도하지 않은 등장 모션 (fade-in + 미세 확대만 허용) */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: rise-fade 0.7s ease-out both;
+  }
+  .hero-media img {
+    animation: hero-settle 2.4s ease-out both;
+  }
+}
+
+@keyframes rise-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-settle {
+  from {
+    transform: scale(1.025);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* 갤러리 가로 스크롤 */
+.gallery-track {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.gallery-track > * {
+  scroll-snap-align: start;
+}
